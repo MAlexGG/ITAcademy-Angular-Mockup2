@@ -1,0 +1,6 @@
+@import "./header";
+$primary: #5265E1;
+$secondary: #FA5959;
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
