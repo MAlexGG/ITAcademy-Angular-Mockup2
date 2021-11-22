@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
+
     <title>Mock up with Bootstrap and Sass</title>
 </head>
 
@@ -59,7 +60,92 @@
                 <p class="fs-4 text-black-50">Our aim is to make it quick and easy for you to access your favourite websites. Ypur bookmarks sync between your devices so you can access them on the go.</p>
             </div>
         </section>
+        <section class="row justify-content-center mt-5">
+            <nav class="col-8">
+                <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                    <button class="nav-link active mx-5" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Simple Bookmarking</button>
+                    <button class="nav-link mx-5" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Speedy Searching</button>
+                    <button class="nav-link mx-5" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Easy Sharing</button>
+                </div>
+            </nav>
+        </section>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <section class="row p-0 my-5">
+                    <div class="col-6 p-0">
+                        <img src="./assets/img/illustration-features-tab-1-m.png" alt="picture of a web">
+                    </div>
+                    <article class="col-6 p-0 pe-5">
+                        <h2 class="fw-bold mx-5 mt-5 py-5 ps-5">Bookmark in one click</h2>
+                        <p class="fs-4 mb-5 ms-5 px-5 text-black-50">Organize your bookmarks however you like. Our simple drag-and-drop interfaces gives you complete control over how you manage your favourite sites.</p>
+                        <div class="mx-5 px-5">
+                            <button type="button" class="btn btn-primary fs-5 fw-bold text-white me-3 bt-more">More info</button>
+                        </div>
+                    </article>
+                </section>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <section class="row p-0 my-5">
+                    <div class="col-6 p-0">
+                        <img src="./assets/img/illustration-features-tab-1-m.png" alt="picture of a web">
+                    </div>
+                    <article class="col-6 p-0 pe-5">
+                        <h2 class="fw-bold mx-5 mt-5 py-5 ps-5">Hola</h2>
+                        <p class="fs-4 mb-5 ms-5 px-5 text-black-50">Organize your bookmarks however you like. Our simple drag-and-drop interfaces gives you complete control over how you manage your favourite sites.</p>
+                        <div class="mx-5 px-5">
+                            <button type="button" class="btn btn-primary fs-5 fw-bold text-white me-3 bt-more">More info</button>
+                        </div>
+                    </article>
+                </section>
+            </div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <section class="row p-0 my-5">
+                    <div class="col-6 p-0">
+                        <img src="./assets/img/illustration-features-tab-1-m.png" alt="picture of a web">
+                    </div>
+                    <article class="col-6 p-0 pe-5">
+                        <h2 class="fw-bold mx-5 mt-5 py-5 ps-5">Chao</h2>
+                        <p class="fs-4 mb-5 ms-5 px-5 text-black-50">Organize your bookmarks however you like. Our simple drag-and-drop interfaces gives you complete control over how you manage your favourite sites.</p>
+                        <div class="mx-5 px-5">
+                            <button type="button" class="btn btn-primary fs-5 fw-bold text-white me-3 bt-more">More info</button>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </div>
+
+
+        <!-- <section class="row justify-content-center mt-5">
+            <div class="col-8">
+                <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                    <li class="nav-item mx-5" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Simple Bookmarking</button>
+                    </li>
+                    <li class="nav-item mx-5" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Speedy Searching</button>
+                    </li>
+                    <li class="nav-item mx-5" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Easy Sharing</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Tab 1</div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Tab 2</div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Tab 3</div>
+            </div> -->
+
+
+
+
+
+
+        </section>
     </main>
+
+
+    <script type="text/javascript" src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
