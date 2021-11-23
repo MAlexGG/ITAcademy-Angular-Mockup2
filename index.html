@@ -6,42 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
-
     <title>Mock up with Bootstrap and Sass</title>
 </head>
 
 <body>
-    <header class="container-fluid">
-        <nav class="navbar navbar-light m-5">
-            <div class="col-5 ms-5">
-                <a class="navbar-brand" href="#">
+    <header class="container-fluid fixed-top p-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light p-3 justify-content-center">
+            <div class="container-fluid row">
+                <a class="navbar-brand p-0 m-0 col-6" href="#">
                     <img src="./assets/img/logo-bookmark.svg" alt="logo bookmark">
                 </a>
-            </div>
-            <div class="col-6 navbar-expand-lg">
-                <ul class="navbar-nav align-items-center">
-                    <li class="nav-item px-4">
-                        <a class="nav-link active" aria-current="page" href="#">FEATURES</a>
-                    </li>
-                    <li class="nav-item px-4">
-                        <a class="nav-link" href="#">PRICING</a>
-                    </li>
-                    <li class="nav-item px-4">
-                        <a class="nav-link" href="#">CONTACT</a>
-                    </li>
-                    <li class="nav-item px-4">
-                        <a class="nav-link" href="#">
-                            <button type="button" class="btn btn-secondary fw-bold text-white bt-login bt-shadow">LOGIN</button>
-                        </a>
-                    </li>
-                </ul>
+                <button type="button" class="navbar-toggler col-2 collapsed p-0" data-bs-toggle="collapse" data-bs-target="#menuNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="menuNav" class="collapse navbar-collapse collapse">
+                    <ul class="navbar-nav ms-3">
+                        <li class="nav-item text-center py-3 n-item"><a class="nav-link m-3" href="#">FEATURES</a></li>
+                        <li class="nav-item text-center py-3 n-item"><a class="nav-link m-3" href="#">PRICING</a></li>
+                        <li class="nav-item text-center py-3 n-item"><a class="nav-link m-3" href="#">CONTACT</a></li>
+                        <li class="nav-item text-center py-3 n-item"><a class="nav-link m-3 bt-login" href="#">LOGIN</a></li>
+                    </ul>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                        </svg>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
 
-    <main class="container-fluid">
-        <section class="row">
-            <article class="col-6 p-0">
+    <main class="container-fluid mt-5 pt-5">
+        <section class="row mt-5">
+            <article class="col-6 p-0 pt-5">
                 <h1 class="fw-bold mx-5 mt-5 py-5 ps-5">A Simple Bookmark Manager</h1>
                 <p class="fs-4 mb-5 ms-5 ps-5 text-black-50">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
                 <div class="mx-5 px-5">
@@ -50,13 +50,13 @@
                 </div>
             </article>
 
-            <div class="col-6 p-0 ps-2 overflow-hidden">
+            <div class="col-6 p-0 ps-2 overflow-hidden pt-5">
                 <img src="./assets/img/illustration-hero-m.png" alt="picture of a web">
             </div>
         </section>
         <section class="row justify-content-center m-5">
             <div class="col-6 col-6 text-center mt-5 px-0 pt-5">
-                <h3 class="fw-bold mb-5">Features</h3>
+                <h3 class="fw-bold mb-4">Features</h3>
                 <p class="fs-4 text-black-50">Our aim is to make it quick and easy for you to access your favourite websites. Ypur bookmarks sync between your devices so you can access them on the go.</p>
             </div>
         </section>
@@ -114,37 +114,44 @@
             </div>
         </div>
 
+        <!--   AQUI EMPIEZA LA PRUEBA -->
 
-        <!-- <section class="row justify-content-center mt-5">
-            <div class="col-8">
-                <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
-                    <li class="nav-item mx-5" role="presentation">
-                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Simple Bookmarking</button>
+
+
+
+
+        <!-- <nav class="navbar navbar-light bg-white ">
+            <div class="col-5 ms-5">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/img/logo-bookmark.svg" alt="logo bookmark">
+                </a>
+            </div>
+            <div class="col-6 navbar-expand-lg">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item px-4">
+                        <a class="nav-link active" aria-current="page" href="#">FEATURES</a>
                     </li>
-                    <li class="nav-item mx-5" role="presentation">
-                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Speedy Searching</button>
+                    <li class="nav-item px-4">
+                        <a class="nav-link" href="#">PRICING</a>
                     </li>
-                    <li class="nav-item mx-5" role="presentation">
-                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Easy Sharing</button>
+                    <li class="nav-item px-4">
+                        <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+                    <li class="nav-item px-4">
+                        <a class="nav-link" href="#">
+                            <button type="button" class="btn btn-secondary fw-bold text-white bt-login bt-shadow">LOGIN</button>
+                        </a>
                     </li>
                 </ul>
             </div>
-            <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Tab 1</div>
-                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Tab 2</div>
-                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Tab 3</div>
-            </div> -->
+        </nav> -->
 
-
-
-
-
-
-        </section>
+        <!-- AQUI TERMINA LA PRUEBA -->
     </main>
 
 
     <script type="text/javascript" src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
 
 </body>
 
