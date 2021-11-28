@@ -27,8 +27,17 @@ h1 {
 }
 
 .bt-get {
-    height: 60px;
-    width: 205px;
+    height: 50px;
+    width: 155px;
+    font-size: 1rem;
+}
+
+@include media-breakpoint-up(lg) {
+    .bt-get {
+        height: 60px;
+        width: 205px;
+        font-size: 1.3rem;
+    }
 }
 
 .bt-more {
@@ -47,5 +56,25 @@ h1 {
 @include media-breakpoint-up(lg) {
     .n-item {
         border-bottom: none;
+    }
+}
+
+.ct-navItems {
+    height: 100vh;
+}
+
+@include media-breakpoint-up(lg) {
+    .ct-navItems {
+        height: auto;
+    }
+}
+
+.ct-navBar {
+    background-color: rgba(36, 41, 70, 0.5);
+}
+
+@include media-breakpoint-up(lg) {
+    .ct-navBar {
+        background-color: $light;
     }
 }
