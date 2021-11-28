@@ -1,0 +1,21 @@
+.inp-contactus {
+    width: 100%;
+}
+
+@include media-breakpoint-up(lg) {
+    .inp-contactus {
+        width: 60%;
+    }
+}
+
+.bt-contactus {
+    background-color: $secondary !important;
+    color: white !important;
+}
+
+@include media-breakpoint-up(lg) {
+    .bt-contactus {
+        background-color: white !important;
+        color: $secondary !important;
+    }
+}
