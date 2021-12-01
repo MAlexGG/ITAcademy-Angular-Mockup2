@@ -18,6 +18,12 @@
     }
 }
 
+.bt-login:hover {
+    border: 2px solid $secondary;
+    background-color: white;
+    color: $secondary !important;
+}
+
 h1 {
     font-size: 3rem !important;
 }
@@ -26,14 +32,38 @@ h1 {
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.13);
 }
 
-.bt-get {
+.bt-getChrome {
     height: 50px;
     width: 155px;
     font-size: 1rem;
 }
 
+.bt-getChrome:hover,
+.bt-extension:hover {
+    border: 2px solid $primary;
+    background-color: white;
+    color: $primary !important;
+}
+
+.bt-getFire {
+    height: 50px;
+    width: 155px;
+    font-size: 1rem;
+}
+
+.bt-getFire:hover {
+    border: 2px solid gray;
+    background-color: white;
+    color: gray !important;
+}
+
 @include media-breakpoint-up(lg) {
-    .bt-get {
+    .bt-getChrome {
+        height: 60px;
+        width: 205px;
+        font-size: 1.3rem;
+    }
+    .bt-getFire {
         height: 60px;
         width: 205px;
         font-size: 1.3rem;
@@ -77,4 +107,12 @@ h1 {
     .ct-navBar {
         background-color: $light;
     }
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: $secondary;
+}
+
+.nav-link:hover {
+    color: $secondary;
 }

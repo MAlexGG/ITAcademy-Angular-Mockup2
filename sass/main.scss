@@ -1,6 +1,7 @@
 $primary: #5265E1;
 $secondary: #FA5959;
 $success: #242946;
+$borderSecondary: 2px solid $secondary;
 @import "../node_modules/bootstrap/scss/_functions";
 @import "../node_modules/bootstrap/scss/_variables";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
